@@ -11,8 +11,11 @@ Le but de ce projet est de récupérer l'historique de prix d'un OPCVM (IE0002XZ
 Python 3.8.8
 
 Please find below the justification for some requirements:
+
 dotenv to call the API key for scrapping from .env file
+
 python-dateutil for delta on dates
+
 requests for API
 
 
@@ -30,7 +33,7 @@ pip install -r requirements.txt
 - Ajouter l'API Access Key dans .env
 
 ## Struture du projet
-
+```plaintext
 .
 ├── main.py                  # Script principal pour lancer le pipeline d'analyse
 ├── src/
@@ -40,17 +43,17 @@ pip install -r requirements.txt
 ├── notebooks/               # Pour hébérger les notebook de tests
 ├── tests/                   # Pour les tests unitaires
 └── README.md                # Documentation du projet
-
+```
 
 
 ## Usage
-ce script va te générer les indicateurs de risque  (Performance, Volatilité, Rendement espéré, Max Drawdown) dans un csv dans le dossier data
+Ce script va te générer les indicateurs de risque  (Performance, Volatilité, Rendement espéré, Max Drawdown) dans un csv dans le dossier data
 
 ```bash
 python main.py
 ```
 
-If futur modifications, ensure to have full coverage of the tests by 
+Pour la vérification des tests unitaires, lancer :   
 
 ```bash
 pytest tests\risk_tests.py
