@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 import os
 import pandas as pd
 from src.data_scrapper import get_hist_data_from_MarketStack  
-from src.risks_indicators import get_risk_stats
+from src.risk_indicators import get_risk_stats
 
 
 def main():
