@@ -24,7 +24,8 @@ def get_hist_data_from_MarketStack(start_date_str: str, end_date_str: str, API_K
     """
     
     url = f"https://api.marketstack.com/v1/eod?access_key={API_KEY}"
-    # API parameters (max 1000 rows allowed per request)
+    # API parameters : the default limit is 100, I set 1000 as max rows allowed per request
+    #I only have last year data, I think there is an other param to set, I can't find it
     querystring = {
 
         "symbols": symbol,
