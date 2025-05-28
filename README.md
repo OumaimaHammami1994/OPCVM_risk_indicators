@@ -3,10 +3,11 @@ Le but de ce projet est de récupérer l'historique de prix d'un OPCVM (IE0002XZ
 
 ## Table des matières
 
-- [Installation] (#installation)
-- [Usage] (#usage)
+- Installation
+- Usage
 
 ## Installation
+
 
 ```bash
 pip install virtualenv
@@ -14,7 +15,9 @@ virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-
+- Créer fichier .env 
+- Créer un compte dans https://marketstack.com/dashboard et récupérer le Your API Access Key
+- Ajouter l'API Access Key dans .env
 ## Usage
 
 
