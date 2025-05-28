@@ -2,9 +2,12 @@
 Le but de ce projet est de récupérer l'historique de prix d'un OPCVM (IE0002XZSH01) sur une source publique et de calculer pour différence periodes différents indicateurs (Performance, Volatilité, Rendement espéré, Max Drawdown) et les exporter en sous forme structurée.
 
 ## Table des matières
-
+- Requirements
 - Installation
 - Usage
+
+## Requirements
+Python 3.8.8
 
 ## Installation
 
@@ -12,7 +15,7 @@ Le but de ce projet est de récupérer l'historique de prix d'un OPCVM (IE0002XZ
 ```bash
 pip install virtualenv
 virtualenv venv
-source venv/bin/activate
+.\venv\Scripts\Activate
 pip install -r requirements.txt
 ```
 - Créer fichier .env 
