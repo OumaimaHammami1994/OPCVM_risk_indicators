@@ -1,1 +1,22 @@
 # OPCVM_risk_indicators
+Le but de ce projet est de récupérer l'historique de prix d'un OPCVM (IE0002XZSH01) sur une source publique et de calculer pour différence periodes différents indicateurs (Performance, Volatilité, Rendement espéré, Max Drawdown) et les exporter en sous forme structurée.
+
+## Table des matières
+
+- [Installation] (#installation)
+- [Usage] (#usage)
+
+## Installation
+
+```bash
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Usage
+
+
+python main.py
+
